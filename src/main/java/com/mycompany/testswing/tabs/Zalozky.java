@@ -39,11 +39,7 @@ public class Zalozky extends javax.swing.JFrame {
     public Zalozky() {
         initComponents();
         btc = new ButtonTabComponent(zalozky);
-        
-        
-        
-        zalozky.addTab("Další záložka", sp);
-        zalozky.setTabComponentAt(0, btc);
+       
         
         
         //zalozky.add("Druhý", panel);
@@ -72,23 +68,9 @@ public class Zalozky extends javax.swing.JFrame {
     private void initComponents() {
 
         zalozky = new javax.swing.JTabbedPane();
-        jPanel1 = new javax.swing.JPanel();
         btnNewTab = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 395, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 223, Short.MAX_VALUE)
-        );
-
-        zalozky.addTab("tab1", jPanel1);
 
         btnNewTab.setText("Nová záložka");
         btnNewTab.addActionListener(new java.awt.event.ActionListener() {
@@ -162,7 +144,6 @@ public class Zalozky extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnNewTab;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JTabbedPane zalozky;
     // End of variables declaration//GEN-END:variables
 
